@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D2285C17-9343-4490-9400-8C2A278226A6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MoL.Core</RootNamespace>
+    <AssemblyName>MoL.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Autofac">
+      <HintPath>..\..\packages\Autofac.3.5.2\lib\net40\Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="Autofac.Configuration">
+      <HintPath>..\..\packages\Autofac.Configuration.3.3.0\lib\net40\Autofac.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Caching\CacheExtensions.cs" />
+    <Compile Include="Caching\ICacheManager.cs" />
+    <Compile Include="Caching\MemoryCacheManager.cs" />
+    <Compile Include="Configuration\Constants.cs" />
+    <Compile Include="Configuration\MoLConfig.cs" />
+    <Compile Include="Data\BaseDataProviderManager.cs" />
+    <Compile Include="Data\DataSettings.cs" />
+    <Compile Include="Data\DataSettingsManager.cs" />
+    <Compile Include="Data\IDataProvider.cs" />
+    <Compile Include="Data\IRepository.cs" />
+    <Compile Include="Domain\Establishments\Agent.cs" />
+    <Compile Include="Domain\Establishments\AgentType.cs" />
+    <Compile Include="Domain\Establishments\CommissionerSOLaborer.cs" />
+    <Compile Include="Domain\Establishments\CommissionerType.cs" />
+    <Compile Include="Domain\Establishments\Establishment.cs" />
+    <Compile Include="Domain\Establishments\EstablishmentAgent.cs" />
+    <Compile Include="Domain\Establishments\EstablishmentAgentService.cs" />
+    <Compile Include="Domain\Establishments\EstablishmentCommissioner.cs" />
+    <Compile Include="Domain\Establishments\EstablishmentCommissionerService.cs" />
+    <Compile Include="Domain\Establishments\EstablishmentNote.cs" />
+    <Compile Include="Domain\Establishments\EstablishmentProfile.cs" />
+    <Compile Include="Domain\Establishments\EstablishmentStatement.cs" />
+    <Compile Include="Domain\Establishments\EstablishmentStatus.cs" />
+    <Compile Include="Domain\Establishments\EstablishmentType.cs" />
+    <Compile Include="Domain\Establishments\ServiceOfficeType.cs" />
+    <Compile Include="Domain\Laborers\AccomodationStatus.cs" />
+    <Compile Include="Domain\Laborers\CandidateRequirement.cs" />
+    <Compile Include="Domain\Laborers\EducationalStatus.cs" />
+    <Compile Include="Domain\Laborers\EducationQualification.cs" />
+    <Compile Include="Domain\Laborers\IndividualExperience.cs" />
+    <Compile Include="Domain\Laborers\JobApplication.cs" />
+    <Compile Include="Domain\Laborers\JobApplicationRequesterType.cs" />
+    <Compile Include="Domain\Laborers\JobApplicationStatus.cs" />
+    <Compile Include="Domain\Laborers\JobAvailability.cs" />
+    <Compile Include="Domain\Laborers\JobVacancy.cs" />
+    <Compile Include="Domain\Laborers\JobVacancyStatus.cs" />
+    <Compile Include="Domain\Laborers\LaborerStatus.cs" />
+    <Compile Include="Domain\Laborers\LaborerType.cs" />
+    <Compile Include="Domain\Laborers\Qualification.cs" />
+    <Compile Include="Domain\Laborers\RejectionReason.cs" />
+    <Compile Include="Domain\Laborers\SaudiFlag.cs" />
+    <Compile Include="Domain\Laborers\WorkingHoursPreference.cs" />
+    <Compile Include="Domain\Log\CWSCommentsTracking.cs" />
+    <Compile Include="Domain\Lookups\Country.cs" />
+    <Compile Include="Domain\Lookups\DisabilityType.cs" />
+    <Compile Include="Domain\Lookups\Gender.cs" />
+    <Compile Include="Domain\Establishments\LaborOffice.cs" />
+    <Compile Include="Domain\Establishments\NoteApplicability.cs" />
+    <Compile Include="Domain\Establishments\NoteSource.cs" />
+    <Compile Include="Domain\Establishments\NoteStatus.cs" />
+    <Compile Include="Domain\Establishments\NoteType.cs" />
+    <Compile Include="Domain\Establishments\Owner.cs" />
+    <Compile Include="Domain\Establishments\Service.cs" />
+    <Compile Include="Domain\Establishments\ServiceOffice.cs" />
+    <Compile Include="Domain\Establishments\UnifiedNumber.cs" />
+    <Compile Include="Domain\Laborers\Laborer.cs" />
+    <Compile Include="Domain\Log\OracleTransactionLog.cs" />
+    <Compile Include="Domain\Lookups\Bank.cs" />
+    <Compile Include="Domain\Lookups\City.cs" />
+    <Compile Include="Domain\Lookups\EconomicActivity.cs" />
+    <Compile Include="Domain\Lookups\GPASystem.cs" />
+    <Compile Include="Domain\Lookups\IndividualDesiredJob.cs" />
+    <Compile Include="Domain\Lookups\IndividualEducationalInfo.cs" />
+    <Compile Include="Domain\Lookups\Job.cs" />
+    <Compile Include="Domain\Lookups\LawRepresentation.cs" />
+    <Compile Include="Domain\Lookups\MaritalStatus.cs" />
+    <Compile Include="Domain\Lookups\Municipality.cs" />
+    <Compile Include="Domain\Lookups\Nationality.cs" />
+    <Compile Include="Domain\Lookups\Origin.cs" />
+    <Compile Include="Domain\Lookups\Religion.cs" />
+    <Compile Include="Domain\Lookups\SalaryRange.cs" />
+    <Compile Include="Domain\Lookups\ServiceEndReason.cs" />
+    <Compile Include="Domain\Lookups\StatementsType.cs" />
+    <Compile Include="Domain\Lookups\Zone.cs" />
+    <Compile Include="Domain\Transactions\ChangeJobDescriptionRequest.cs" />
+    <Compile Include="Domain\Transactions\ChangeWorkerStatusCommentType.cs" />
+    <Compile Include="Domain\Transactions\ChangeWorkStatusRequest.cs" />
+    <Compile Include="Domain\Transactions\LaborerStatusServiceEndReason.cs" />
+    <Compile Include="Domain\Transactions\SponsorTransfer.cs" />
+    <Compile Include="Domain\Transactions\Srv_Transaction.cs" />
+    <Compile Include="Domain\Transactions\STTempLaborer.cs" />
+    <Compile Include="Domain\Transactions\TransferRequest.cs" />
+    <Compile Include="Domain\Transactions\WorkPermit.cs" />
+    <Compile Include="Domain\Users\EmployeeUser.cs" />
+    <Compile Include="Domain\Users\Individual.cs" />
+    <Compile Include="Domain\Users\User.cs" />
+    <Compile Include="Infrastructure\AppDomainTypeFinder.cs" />
+    <Compile Include="Infrastructure\ContainerConfigurer.cs" />
+    <Compile Include="Infrastructure\ContainerManager.cs" />
+    <Compile Include="Infrastructure\MoLEngine.cs" />
+    <Compile Include="Infrastructure\WebAppTypeFinder.cs" />
+    <Compile Include="Domain\BaseEntity.cs" />
+    <Compile Include="Infrastructure\DependencyManagement\AutofacRequestLifetimeHttpModule.cs" />
+    <Compile Include="Infrastructure\DependencyManagement\ComponentLifeStyle.cs" />
+    <Compile Include="Infrastructure\DependencyManagement\ContainerManager.cs" />
+    <Compile Include="Infrastructure\DependencyManagement\IDependencyRegistrar.cs" />
+    <Compile Include="Infrastructure\IEngine.cs" />
+    <Compile Include="Infrastructure\ITypeFinder.cs" />
+    <Compile Include="Infrastructure\Singleton.cs" />
+    <Compile Include="MoLException.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
