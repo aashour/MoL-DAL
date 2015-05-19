@@ -7,7 +7,7 @@ using MoL.Core.Domain.Establishments;
 
 namespace MoL.Core.Domain.Lookups
 {
-    public class Bank:BaseEntity
+    public class Bank : BaseEntity
     {
         public string Name { get; set; }
 

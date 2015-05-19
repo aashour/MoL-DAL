@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MoL.Core.Domain.Establishments;
+using MoL.Core.Domain.Establishments.Enums;
 using MoL.Core.Domain.Users;
 
 namespace MoL.Core.Domain.Log

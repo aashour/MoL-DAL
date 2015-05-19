@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MoL.Core.Domain.Laborers;
+using MoL.Core.Domain.Laborers.Enums;
 using MoL.Core.Domain.Users;
 
 namespace MoL.Core.Domain.Lookups

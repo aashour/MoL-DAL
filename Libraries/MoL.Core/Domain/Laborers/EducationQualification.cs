@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MoL.Core.Domain.Laborers.Enums;
 
 namespace MoL.Core.Domain.Laborers
 {

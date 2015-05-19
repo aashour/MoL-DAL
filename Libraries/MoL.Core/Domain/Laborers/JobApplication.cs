@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using MoL.Core.Domain.Laborers.Enums;
 using MoL.Core.Domain.Users;
 
 namespace MoL.Core.Domain.Laborers

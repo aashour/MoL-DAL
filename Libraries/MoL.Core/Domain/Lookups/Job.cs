@@ -47,6 +47,7 @@ namespace MoL.Core.Domain.Lookups
             get { return _employeeUsers ?? (_employeeUsers = new List<EmployeeUser>()); }
             protected set { _employeeUsers = value; }
         }
+
         //private ICollection<EstablishmentRecruitmentContact> _establishmentRecruitmentContacts { get; set; }
         //public virtual ICollection<EstablishmentRecruitmentContact> EstablishmentRecruitmentContacts
         //{
@@ -58,12 +59,13 @@ namespace MoL.Core.Domain.Lookups
         //private ICollection<GC_AssentJobs> GC_AssentJobs { get; set; }
         //private ICollection<GC_ContractEstablishmentJobs> GC_ContractEstablishmentJobs { get; set; }
         //private ICollection<GC_VisaCreditAllowedJobs> GC_VisaCreditAllowedJobs { get; set; }
-        private ICollection<IndividualDesiredJob> _individualDesiredJobs { get; set; }
-        public virtual ICollection<IndividualDesiredJob> IndividualDesiredJobs
-        {
-            get { return _individualDesiredJobs ?? (_individualDesiredJobs = new List<IndividualDesiredJob>()); }
-            protected set { _individualDesiredJobs   = value; }
-        }
+        //private ICollection<IndividualDesiredJob> _individualDesiredJobs { get; set; }
+        //public virtual ICollection<IndividualDesiredJob> IndividualDesiredJobs
+        //{
+        //    get { return _individualDesiredJobs ?? (_individualDesiredJobs = new List<IndividualDesiredJob>()); }
+        //    protected set { _individualDesiredJobs   = value; }
+        //}
+
         private ICollection<JobVacancy> _jobVacancies { get; set; }
         public virtual ICollection<JobVacancy> JobVacancies
         {

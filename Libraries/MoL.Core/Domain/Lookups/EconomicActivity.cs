@@ -17,7 +17,7 @@ namespace MoL.Core.Domain.Lookups
         public DateTime? CreatedOn { get; set; }
         public DateTime? ModifiedOn { get; set; }
 
-        public virtual EconomicActivity ParentEconomicActivity { get; set; }
+        public virtual EconomicActivity MainEconomicActivity { get; set; }
 
         private ICollection<EconomicActivity> _economicActivities { get; set; }
         public virtual ICollection<EconomicActivity> EconomicActivities

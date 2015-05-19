@@ -8,7 +8,7 @@ using MoL.Core.Domain.Users;
 
 namespace MoL.Core.Domain.Log
 {
-    public class CWSCommentsTracking:BaseEntity
+    public class CWSCommentsTracking : BaseEntity
     {
         public long FK_ChangeWorkerStatusRequestId { get; set; }
         public long? FK_UserId { get; set; }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using MoL.Core.Domain.Laborers;
+using MoL.Core.Domain.Laborers.Enums;
 using MoL.Core.Domain.Log;
 
 namespace MoL.Core.Domain.Transactions

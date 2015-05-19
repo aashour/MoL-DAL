@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using MoL.Core.Domain.Establishments;
 using MoL.Core.Domain.Laborers;
+using MoL.Core.Domain.Laborers.Enums;
 using MoL.Core.Domain.Lookups;
 using MoL.Core.Domain.Users;
 
